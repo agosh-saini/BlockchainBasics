@@ -4,7 +4,7 @@ var express = require('express');
 const TestNet = Btc.networks.testnet
 
 const BigInteger = require('bigi')
-let passphrase = '<ADD RANDODM PASSPHRASE'
+let passphrase = '<ADD RANDODM PASSPHRASE>'
 let keyPair = generateAddressFromSHA256Hash(passphrase);
 function generateAddressFromSHA256Hash(passphrase) {
   let hash = Btc.crypto.sha256(passphrase);
